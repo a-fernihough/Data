@@ -6,13 +6,20 @@ The file “hiscoireland.csv” is a concordance file that links the textual inf
 
 Variable Name  | Description 
 ------------- | ------------- 
-occ_plain	    | n	
-n	            | n	
-HISCO	        | Cell 4      
-hisclass	    | n	
-hisclass5	    | n	
-occ_group	    | n	
+occ_plain	    | Character entry of occupation
+n	            | Number of people with this occupation in 1911
+HISCO	        | HISCO code      
+hisclass	    | HISCLASS code	
+hisclass5	    | HISCLASS-5 code	
+occ_group	    | Connor (2019) schema
 
+The "occ_plain" variable in the above is the occupation entry from 1911 converted to lower case with all spaces and punctuation removed. The code is below where `occupation` is a character vector of original occupations.
+
+```
+occ_plain = gsub("[[:punct:]]", "", occupation)
+occ_plain = gsub(" ", "", occ_plain)
+occ_plain = tolower(occ_plain)
+```
 
 
 ***
