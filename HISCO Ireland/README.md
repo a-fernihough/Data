@@ -6,7 +6,7 @@ The file “hiscoireland.csv” is a concordance file that links the textual inf
 
 Variable Name  | Description 
 ------------- | ------------- 
-occ_plain	    | Character entry of occupation
+occ_plain	    | Character entry for occupation
 n	            | Number of people with this occupation in 1911
 HISCO	        | HISCO code      
 hisclass	    | HISCLASS code	
